@@ -1,0 +1,23 @@
+body{
+    color: sandybrown;
+    background: url("background2.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+div{
+    float: inherit;
+}
+hr{
+    margin-left: 0;
+    width:50%;
+}
+img{
+    width: 12%;
+    border: dashed white 3px;
+}
+a{
+    color: sandybrown;
+}
+a:hover{
+    color: indianred;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#genButton').click(function(){
+                var thead = $('<thead>').append(
+                        $('<th>').text("Manufacturer"),
+                        $('<th>').text("Model"),
+                        $('<th>').text("Year"),
+                        $('<th>').text("Price"),
+                        $('<th>').text("Class")
+                ).prependTo('table')
+                var cars = $('#textArea').val();
+                    cars = $.parseJSON(cars);
+                $.each(cars, function(i,car){
+                    $tr = $('<tr>').append(
+                        $('<td>').text(car.manufacturer),
+                        $('<td>').text(car.model),
+                        $('<td>').text(car.year),
+                        $('<td>').text(car.price),
+                        $('<td>').text(car.class)
+                    ).appendTo('tbody')
+                })
+            });
+        });
+    </script>
+    <style>
+        table,thead,tr,td,th{
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+        thead{
+            background-color: darkolivegreen;
+            color: antiquewhite;
+        }
+        th,td{
+            width: 120px;
+        }
+        td{
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>                                                          //TODO - FULL DYNAMIC !!!
+<form>
+    <b>Sample input:</b><br><br/>
+    [{"manufacturer":"BMW","model":"E92 320i","year":2011,"price":50000,"class":"Family"},
+    {"manufacturer":"Porsche","model":"Panamera","year":2012,"price":100000,"class":"Sport"},
+    {"manufacturer":"Peugeot","model":"305","year":1978,"price":1000,"class":"Family"}]
+    <br/> <br/>
+    <textarea name="" id="textArea" cols="50" rows="7" placeholder="Insert JSON string here..."></textarea><br/>
+    <input type="button" value="Generate Table" id="genButton"/><br/><br/>
+</form>
+<table>
+    <tbody>
+    </tbody>
+</table>
+</body>
+</html>

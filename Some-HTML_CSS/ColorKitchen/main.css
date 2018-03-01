@@ -1,0 +1,146 @@
+body {
+    margin: 0 auto;
+    background:url(colorful_dots_on_black.jpg) repeat;
+    width:1105px;
+}
+
+body > header {
+    margin:5px;
+    color:yellow;
+    text-align:center;
+    margin-top: 0;
+    font-family:Calibri;
+    font-weight: bold;
+    font-size:3em;
+    height: 60px;
+    background: linear-gradient(to right,red,red 33.3%, green 33.3%,green 67.7%,blue 67.7%);
+}
+
+aside {
+    margin-top:20px;
+    float:left;
+    width:250px;
+}
+aside li {
+    margin-left:10px;
+    margin-bottom:5px;
+}
+aside header {
+    background:none;
+    text-decoration:underline;
+    text-align:left;
+    color:black;
+    font-size:1.5em;
+    margin:10px;
+
+}
+aside a {
+    text-decoration: none;
+    color:black;
+    font-size:1em;
+    padding:5px;
+}
+a:hover{
+    border-radius: 6px;
+}
+a[href="ColorKitchen.html#web-Colors"]:hover {
+    background-color:red;
+    color:white;
+}
+
+a[href="ColorKitchen.html#web-Safe-Colors"]:hover {
+    background-color:orange;
+    color:black;
+}
+
+a[href="ColorKitchen.html#RGB"]:hover {
+    background-color:yellow;
+    color:black;
+}
+
+a[href="ColorKitchen.html#RGBA"]:hover {
+    background-color:green;
+    color:white;
+}
+
+a[href="ColorKitchen.html#HSL-HSV"]:hover {
+    background-color:blue;
+    color:white;
+}
+
+a[href="ColorKitchen.html#lorem"]:hover {
+    background-color:purple;
+    color:white;
+}
+
+a:visited {
+    color:gray;
+}
+
+ul {
+    list-style-image: url('bullet.png');
+}
+
+section {
+    margin-top:20px;
+    margin-left:20px;
+    display:block;
+    float:left;
+    width:830px;
+}
+
+article {
+    margin-bottom:10px;
+    padding:10px;
+    font-family:Calibri;
+    font-style:italic;
+}
+
+article div::first-letter {
+    font-size:4em;
+    font-family:Tahoma;
+}
+
+aside, article {
+    background-color: rgba(255,255,255,0.87);
+    border-radius:20px;
+}
+
+article header {
+    margin:5px;
+    padding:5px;
+    font-style:normal;
+    font-family:Calibri;
+    font-size:2em;
+    border-radius:5px;
+}
+#web-Colors {
+
+    background-color:red;
+    color:white;
+}
+
+#web-Safe-Colors {
+    background-color:orange;
+    color:black;
+}
+
+#RGB {
+    background-color:yellow;
+    color:black;
+}
+
+#RGBA {
+    background-color:green;
+    color:white;
+}
+
+#HSL-HSV {
+    background-color:blue;
+    color:white;
+}
+
+#lorem {
+    background-color:purple;
+    color:white;
+}

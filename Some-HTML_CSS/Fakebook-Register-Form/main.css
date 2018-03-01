@@ -1,0 +1,101 @@
+body{
+    font-family: sans-serif;
+}
+div{
+    background-color:#415F9C ;
+}
+#container{
+    margin:auto;
+    color: white;
+    background-color: #415F9C;
+    width: 815px;
+}
+#firstFormDiv{
+    text-align: left;
+    margin: 3px;
+}
+#secondFormDiv{
+    text-align: left;
+    margin-left:18px;
+}
+input[type="datetime-local"]{
+    width:200px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+header{
+    text-align: center;
+}
+h3{
+    margin-top: 0;
+}
+h1{
+    margin-bottom: 10px;
+}
+#fbSign{
+    font-weight: bold;
+    font-size: 100px;
+}
+fieldset{
+    margin: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+}
+#firstForm{
+    padding-bottom: 36px;
+    width: 275px;
+}
+input[type="text"],input[type="color"],select,#WaterMeter,
+input[type="email"],input[type="tel"]{
+    width: 125px;
+    border-radius: 5px;
+    margin: 3px;
+    height: 21px;
+}
+input[type="number"]{
+    width: 50px;
+}
+#button1{
+    font-weight:bold ;
+    color: #415F9C;
+    background-color: #DFDFDF;
+    margin-top: 5px;
+    border-radius: 8px;
+    margin-left: 11px;
+    margin-bottom: 15px;
+    width: 297px;
+    height: 48px;
+    font-size: 20px;
+}
+#kasha1, #kasha2{
+    float: left;
+}
+#secondForm{
+    margin-left: 25px;
+    width: 440px;
+    height: 242px;
+
+}
+#kasha2{
+    width: 500px;
+}
+#register{
+    float: left;
+    font-weight:bold ;
+    color: #415F9C;
+    background-color: #DFDFDF;
+    margin-top: 8px;
+    border-radius: 8px;
+    margin-left: 23px;
+    width: 464px;
+    height: 48px;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+textarea{
+    width: 405px;
+    height: 80px;
+    resize: none;
+}

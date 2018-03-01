@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Element Insertion</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+<p>Add a string to the list...</p>
+<input type="button" value="First" id="first">
+<input type="text" id="text">
+<input type="button" value="Last" id="last">
+<ul id="list">
+    <li>Audi</li>
+    <li>Bmw</li>
+    <li>Mercedes</li>
+    <li>Honda</li>
+    <li>Nissan</li>
+</ul>
+<script>
+    var text;
+    $('#first').click(function(){
+        text = $('#text').val();
+        if(text === ''){
+            return;
+        }
+        $('#list').prepend('<li>'+text+'</li>');
+        $('#text').val('');
+    });
+    $('#last').click(function(){
+        text = $('#text').val();
+        if(text === ''){
+            return;
+        }
+        $('#list').append('<li>'+text+'</li>');
+        $('#text').val('');
+    });
+</script>
+</body>
+</html>

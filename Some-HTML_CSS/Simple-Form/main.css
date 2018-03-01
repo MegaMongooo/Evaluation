@@ -1,0 +1,58 @@
+body{
+    background-color: #EEEEEE;
+    font-family: sans-serif;
+}
+span{
+    color: #234465;
+}
+div{
+    float: left;
+    padding: 10px;
+}
+#form1 input {
+    width: 350px;
+    padding: 10px;
+    margin: 6px;
+}
+#form2 input:not([type=checkbox]){
+    width: 340px;
+    padding: 10px;
+    margin: 6px;
+ }
+input[type="checkbox"]{
+    padding: 10px;
+    margin: 6px;
+}
+#form1 input[type="submit"]{
+    width: 175px;
+    border: solid #234465 3px;
+    background-color: white;
+    float: right;
+    color: #234465;
+    font-weight: bold;
+}
+#form2 input[type="submit"]{
+    width: 150px;
+    border: solid #F29706 3px;
+    background-color: #234465;
+    float: right;
+    color: white;
+    font-weight: bold;
+}
+#form1 input[type="submit"]:hover{
+    background-color: #F29706;
+}
+#form2{
+    padding-bottom: 70px;
+    margin-top: 0px;
+    color: white;
+    background-color:#234465 ;
+}
+h3,h2,h4{
+    margin: 0;
+    margin-left: 6px ;
+}
+a{
+    color: white;
+    float: right;
+}

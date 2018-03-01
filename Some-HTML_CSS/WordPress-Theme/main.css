@@ -1,0 +1,15 @@
+#logoBlack{
+    height: 67px;
+}
+#logoSign{
+    height: 40px;
+    vertical-align: 10px;
+}
+input[type="text"]{
+    height: 22px;
+}
+#logoBlue{
+    height: 40px;
+    vertical-align: middle;
+    padding-left: 0;
+}
